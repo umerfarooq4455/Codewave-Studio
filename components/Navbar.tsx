@@ -19,10 +19,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-cream-100/80 backdrop-blur-md border-b border-cream-300">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-9 h-9 rounded-lg bg-ink-900 flex items-center justify-center font-black text-lime">
-            C
-          </div>
-          <span className="font-bold text-lg tracking-tight text-ink-900">
+          <span className="font-bold text-xl tracking-tight text-ink-900">
             Codewave<span className="italic-serif text-ink-500 ml-1">Studio</span>
           </span>
         </Link>

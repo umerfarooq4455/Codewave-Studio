@@ -222,7 +222,7 @@ export default function Home() {
       <section className="bg-cream-50 border-y border-cream-300 py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="tag mb-5 mx-auto">— Testimonials</div>
+            <div className="tag mb-5 mx-auto">Testimonials</div>
             <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
               Loved by USA <span className="italic-serif text-ink-500">small businesses</span>.
             </h2>
