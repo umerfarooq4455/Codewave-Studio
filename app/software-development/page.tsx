@@ -4,7 +4,7 @@ import { ArrowUpRight, Check, Code2, Database, Cloud, Cpu, GitBranch, Shield, St
 export const metadata = {
   title: "Custom Software Development for USA Businesses | Codewave Studio",
   description:
-    "Custom software, web apps, and SaaS development for USA businesses. Modern stack. Fixed pricing starting at $1,499.",
+    "Custom software, web apps, and SaaS development for USA businesses. Modern stack. Fixed pricing starting at $599.",
 };
 
 export default function SoftwareDevelopmentLanding() {
@@ -23,7 +23,7 @@ export default function SoftwareDevelopmentLanding() {
 
           <p className="text-lg md:text-xl text-ink-500 max-w-2xl mx-auto mb-10 leading-relaxed">
             Web apps, internal tools, SaaS platforms, and automations.
-            Built fast. Built right. <span className="text-ink-900 font-semibold">Starting at $1,499.</span>
+            Built fast. Built right. <span className="text-ink-900 font-semibold">Starting at $599.</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-10">
@@ -155,9 +155,9 @@ export default function SoftwareDevelopmentLanding() {
 
           <div className="grid md:grid-cols-3 gap-5">
             {[
-              { name: "MVP / Prototype", price: "$1,499", time: "2–3 weeks", features: ["Single core feature", "User auth", "Database", "Hosting setup", "Source code yours"], popular: false },
-              { name: "Business App", price: "$3,499", time: "4–6 weeks", features: ["Up to 8 features", "Stripe payments", "Admin dashboard", "Email notifications", "30 days support"], popular: true },
-              { name: "Full Platform", price: "$6,999+", time: "6–12 weeks", features: ["Unlimited features", "Custom integrations", "AI features included", "60 days support", "Free hosting 1 year"], popular: false },
+              { name: "MVP / Prototype", price: "$599", time: "1–2 weeks", features: ["Single core feature", "User auth", "Database", "Hosting setup", "Source code yours"], popular: false },
+              { name: "Business App", price: "$1,499", time: "3–5 weeks", features: ["Up to 8 features", "Stripe payments", "Admin dashboard", "Email notifications", "30 days support"], popular: true },
+              { name: "Full Platform", price: "$2,999+", time: "6–10 weeks", features: ["Unlimited features", "Custom integrations", "AI features included", "60 days support", "Free hosting 1 year"], popular: false },
             ].map((p) => (
               <div key={p.name} className={`relative rounded-3xl p-8 ${p.popular ? "bg-lime text-ink-900" : "bg-white/5 border border-white/10"}`}>
                 {p.popular && (
@@ -265,7 +265,7 @@ export default function SoftwareDevelopmentLanding() {
           {[
             { q: "How long does it take?", a: "Most MVPs ship in 2–3 weeks. Business apps in 4–6 weeks. Larger platforms 6–12 weeks. You'll get a firm timeline with your quote." },
             { q: "Do I own the code?", a: "Yes — 100%. You get full source code, GitHub access, documentation, and deployment credentials. No lock-in, ever." },
-            { q: "What if I need changes later?", a: "Every project includes a free support window. After that, we offer monthly maintenance plans, or hourly work at $50/hr." },
+            { q: "What if I need changes later?", a: "Every project includes a free support window. After that, we offer monthly maintenance plans, or hourly work at $25/hr." },
             { q: "Can you work with my existing system?", a: "Absolutely. We integrate with Shopify, QuickBooks, Stripe, Salesforce, HubSpot, Zapier, and most APIs." },
             { q: "How do payments work?", a: "50% upfront to start, 50% on delivery. Pay via Stripe (USD card) or wire transfer. Fully invoiced." },
             { q: "What if I'm not happy?", a: "We don't move to the next milestone until you approve the current one. If you're truly unhappy in the first week, we refund." },

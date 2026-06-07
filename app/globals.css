@@ -21,6 +21,16 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Custom text selection — lime highlight with dark text */
+::selection {
+  background: #C4F542;
+  color: #0A0A0A;
+}
+::-moz-selection {
+  background: #C4F542;
+  color: #0A0A0A;
+}
+
 .serif {
   font-family: "Instrument Serif", Georgia, serif;
   font-weight: 400;

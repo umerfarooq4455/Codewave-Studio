@@ -1,0 +1,40 @@
+# /etc/nginx/sites-available/codewavestudio
+# Reverse proxy: domain → Next.js on port 3000
+# After saving, run:
+#   sudo ln -s /etc/nginx/sites-available/codewavestudio /etc/nginx/sites-enabled/
+#   sudo nginx -t
+#   sudo systemctl reload nginx
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name codewavestudio.xyz www.codewavestudio.xyz;
+
+    # Let's Encrypt verification path
+    location /.well-known/acme-challenge/ {
+        root /var/www/html;
+    }
+
+    # All other traffic → Next.js
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    # Cache static assets aggressively
+    location /_next/static/ {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_cache_valid 200 1y;
+        add_header Cache-Control "public, max-age=31536000, immutable";
+    }
+}
+
+# After installing SSL with certbot, this entire file is rewritten automatically
+# to add HTTPS on port 443 and redirect HTTP → HTTPS. You don't need to edit it.

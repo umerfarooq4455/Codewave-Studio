@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Mail, Linkedin, MessageCircle, Globe, ArrowUpRight } from "lucide-react";
 
+
 export default function Footer() {
   return (
     <footer className="bg-ink-900 text-cream-100 mt-24">
@@ -8,9 +9,6 @@ export default function Footer() {
         <div className="grid md:grid-cols-12 gap-10 mb-12">
           <div className="md:col-span-5">
             <div className="flex items-center gap-2 mb-5">
-              <div className="w-10 h-10 rounded-lg bg-lime flex items-center justify-center font-black text-ink-900">
-                C
-              </div>
               <span className="font-bold text-xl">
                 Codewave<span className="italic-serif text-cream-300 ml-1">Studio</span>
               </span>

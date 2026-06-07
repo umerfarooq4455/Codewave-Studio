@@ -18,7 +18,7 @@ export default function Home() {
 
           <p className="text-lg md:text-xl text-ink-500 max-w-2xl mb-10 leading-relaxed">
             Custom-coded, lightning-fast websites and software built to convert visitors into customers.
-            Delivered in 7 days. Starting at <span className="text-ink-900 font-semibold">$799</span>.
+            Delivered in 7 days. Starting at <span className="text-ink-900 font-semibold">$299</span>.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
@@ -160,22 +160,22 @@ export default function Home() {
           {[
             {
               name: "Starter",
-              price: "$799",
-              desc: "Perfect for new businesses ready to get online.",
-              features: ["5-page website", "Mobile-friendly design", "Contact form", "Basic SEO", "30 days support"],
+              price: "$299",
+              desc: "Perfect for new businesses ready to get online fast.",
+              features: ["5-page website", "Mobile-friendly design", "Contact form", "Basic SEO setup", "14 days support"],
               popular: false,
             },
             {
               name: "Business",
-              price: "$1,499",
+              price: "$549",
               desc: "Most popular — for growing companies.",
-              features: ["10-page website", "Booking system", "Google Maps + reviews", "Advanced SEO", "Analytics setup", "60 days support"],
+              features: ["10-page website", "Booking system", "Google Maps + reviews", "Advanced SEO", "Analytics setup", "30 days support"],
               popular: true,
             },
             {
               name: "Premium",
-              price: "$2,499+",
-              desc: "Full-service custom builds with ongoing support.",
+              price: "$999+",
+              desc: "Full-service custom build with ongoing support.",
               features: ["Unlimited pages", "Custom features", "E-commerce ready", "Logo design included", "Monthly maintenance", "Priority support"],
               popular: false,
             },

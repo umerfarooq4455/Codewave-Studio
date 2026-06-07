@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark rounded square background -->
+  <rect width="32" height="32" rx="7" fill="#0A0A0A"/>
+  <!-- Lime "C" arc shape — represents code/development niche -->
+  <path
+    d="M22 11 C22 11 19.5 8.5 16 8.5 C11.5 8.5 8.5 11.8 8.5 16 C8.5 20.2 11.5 23.5 16 23.5 C19.5 23.5 22 21 22 21"
+    stroke="#C4F542"
+    stroke-width="3"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <!-- Small dot accent (like a cursor / code prompt) -->
+  <circle cx="23" cy="16" r="1.8" fill="#C4F542"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <!-- Dark background -->
+  <rect width="180" height="180" rx="38" fill="#0A0A0A"/>
+  <!-- Large C arc -->
+  <path
+    d="M126 62 C126 62 110 44 90 44 C64 44 44 65 44 90 C44 115 64 136 90 136 C110 136 126 118 126 118"
+    stroke="#C4F542"
+    stroke-width="16"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <!-- Cursor dot -->
+  <circle cx="130" cy="90" r="10" fill="#C4F542"/>
+  <!-- Small wordmark: "CS" in cream -->
+  <text
+    x="90"
+    y="162"
+    text-anchor="middle"
+    font-family="system-ui, sans-serif"
+    font-size="13"
+    font-weight="700"
+    fill="#F5EFE6"
+    letter-spacing="5"
+    opacity="0.6"
+  >STUDIO</text>
+</svg>

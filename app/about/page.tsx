@@ -19,7 +19,7 @@ export default function AboutPage() {
           <div className="serif text-4xl text-ink-400 mb-6">Our story</div>
           <div className="text-ink-700 space-y-5 leading-relaxed text-lg">
             <p>
-              Most small business owners get burned by web designers. Either they pay $5,000 for a slow, template-based site, or they DIY something on Wix that looks like everyone else's.
+              Most small business owners get burned by web designers. Either they pay $2,000–$5,000 for a slow, template-based site, or they DIY something on Wix that looks like everyone else's.
             </p>
             <p>
               We started Codewave Studio to change that. We hand-code every site using modern technology — Next.js, React, Tailwind — the same stack used by Netflix, TikTok, and Notion. But we charge a fraction of what big agencies do.
