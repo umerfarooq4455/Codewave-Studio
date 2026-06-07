@@ -1,0 +1,14 @@
+# Nixpacks build config for Dokploy
+# Force Node 20 LTS (default is 18, which is EOL for Next.js)
+
+[phases.setup]
+nixPkgs = ["nodejs_20", "npm-9_x"]
+
+[phases.install]
+cmds = ["npm install --legacy-peer-deps"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "npm run start"
