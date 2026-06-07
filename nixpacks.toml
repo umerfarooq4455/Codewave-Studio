@@ -1,5 +1,7 @@
 # Nixpacks build config for Dokploy
-# Force Node 20 LTS (default is 18, which is EOL for Next.js)
+# - Force Node 20 LTS (default is Node 18 which is EOL)
+# - Use legacy-peer-deps so npm install doesn't fail on peer conflicts
+# - Always listen on port 3000 (Dokploy must forward to this port)
 
 [phases.setup]
 nixPkgs = ["nodejs_20", "npm-9_x"]
@@ -12,3 +14,8 @@ cmds = ["npm run build"]
 
 [start]
 cmd = "npm run start"
+
+[variables]
+PORT = "3000"
+HOSTNAME = "0.0.0.0"
+NEXT_TELEMETRY_DISABLED = "1"
